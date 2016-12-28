@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Halaman Resep</title>
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<style type="text/css">
+		#readmore{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+
+<script type="text/javascript">
+	function readMore(){
+		var temp = document.getElementById("readmore").style.display;
+		if(temp=="none"){
+			document.getElementById("readmore").style.display = "none";
+		}
+		else{
+			document.getElementById("readmore").style.display = "block";
+		}
+	}
+</script>
+
+<div id="header">
+	<h1 class="center">Coding Teens</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</div>
+<div id="wrapper-content">
+
+	<h1 class="center">POKEDEX Gallery</h1>
+
+
+    <div class="content">
+		    <img src="images/Articuno.png">
+		    <h2>Articuno</h2>
+		    <h4>Articuno is a large avian Pokemon with predominantly blue plumage and large wings said to be made of ice. <br />
+	
+		    <div id="readmore">
+			    It has a head crest that consists of three, darker blue rhombus-shaped feathers on its forehead and circular red eyes. Its beak is short and gray, and its long, thin legs are the same color.
+			</div>
+
+		    <button onclick="readMore()">Read more</button>
+		    </h4>
+	</div>
+
+	<div class="content">
+		    <img src="images/Blastoise.png">
+		    <h2>Blastoise</h2>
+		    <h4>Blastoise is a large, bipedal tortoise-like Pokémon. Its body is dark blue and is mostly hidden by its tough, brown shell. <br />This shell has a pale yellow underside and a white ridge encircling its arms and separating the upper and lower halves... <button id="readmore">Read more</button>
+		    </h4>
+	</div>
+	
+	<div class="content">
+		    <img src="images/Charizard.png">
+		    <h2>Charizard</h2>
+		    <h4>Semua orang dari sabang sampai merauke sangat menyukai makanan yang satu ini. <br />Berikut adalah
+		    cara memasak... <button onclick="readMore()">Read more</button>
+		    </h4>
+	</div>
+
+
+</div>
+
+<div id="footer">
+    <p align="center">Copyright Coding mums.</p>
+</div>
+</body>
+</html>
